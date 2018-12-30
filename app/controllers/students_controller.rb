@@ -16,7 +16,6 @@ class StudentsController < ApplicationController
   end
 
 
-
   private
 
     def set_student
