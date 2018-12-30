@@ -1,5 +1,6 @@
 
 <div>
+  <% binding.pry %>
   <% @students.each do |student| %>
     <div><%= link_to(student.to_s  , "/student/#{student.id}")  %>  </div>
   <% end %>
