@@ -12,7 +12,7 @@ class StudentsController < ApplicationController
   def activate
     binding.pry
     @student = Student.find(params[:id])
-    @student.update(if @student.active == true ? active = false : active = true)
+    @student.update(@student.active == true ? active = false : active = true)
     redirect_to student_path(@student)
   end
 
