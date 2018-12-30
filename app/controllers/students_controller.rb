@@ -16,9 +16,7 @@ class StudentsController < ApplicationController
   end
 
   def to_s
-    @student = Student.find(params[:id])
-    @student.update(active: true)
-    redirect_to student_path(@student)
+    self.first_name + " " + self.last_name
   end
 
   private
