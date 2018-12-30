@@ -15,9 +15,7 @@ class StudentsController < ApplicationController
     redirect_to student_path(@student)
   end
 
-  def to_s
-    self.first_name + " " + self.last_name
-  end
+
 
   private
 
